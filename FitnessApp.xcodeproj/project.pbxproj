@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		521E5FAD2661118A0040ED72 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 521E5FAC2661118A0040ED72 /* AppDelegate.swift */; };
 		521E5FAF2661118A0040ED72 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 521E5FAE2661118A0040ED72 /* SceneDelegate.swift */; };
-		521E5FB12661118A0040ED72 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 521E5FB02661118A0040ED72 /* ViewController.swift */; };
 		521E5FB42661118A0040ED72 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 521E5FB22661118A0040ED72 /* Main.storyboard */; };
 		521E5FB62661118E0040ED72 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 521E5FB52661118E0040ED72 /* Assets.xcassets */; };
 		521E5FB92661118E0040ED72 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 521E5FB72661118E0040ED72 /* LaunchScreen.storyboard */; };
@@ -19,13 +18,33 @@
 		521E5FD0266115C40040ED72 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 521E5FCF266115C40040ED72 /* SettingsViewController.swift */; };
 		521E5FD3266115E60040ED72 /* PlanViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 521E5FD2266115E60040ED72 /* PlanViewController.swift */; };
 		521E5FD6266115F20040ED72 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 521E5FD5266115F20040ED72 /* ProfileViewController.swift */; };
+		521E5FD926613A660040ED72 /* ActivityCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 521E5FD826613A660040ED72 /* ActivityCoordinator.swift */; };
+		521E5FDE26613ACC0040ED72 /* UIViewController+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 521E5FDD26613ACC0040ED72 /* UIViewController+Ext.swift */; };
+		521E5FE326613C060040ED72 /* ActivityViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 521E5FE226613C060040ED72 /* ActivityViewModel.swift */; };
+		521E5FE726613C2A0040ED72 /* PlanViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 521E5FE626613C2A0040ED72 /* PlanViewModel.swift */; };
+		521E5FEA26613C3C0040ED72 /* ProfileViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 521E5FE926613C3C0040ED72 /* ProfileViewModel.swift */; };
+		521E5FED26613C560040ED72 /* SettingsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 521E5FEC26613C560040ED72 /* SettingsViewModel.swift */; };
+		521E5FF026613CC90040ED72 /* PlanCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 521E5FEF26613CC90040ED72 /* PlanCoordinator.swift */; };
+		521E5FF326613CE10040ED72 /* ProfileCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 521E5FF226613CE00040ED72 /* ProfileCoordinator.swift */; };
+		521E5FF626613CF40040ED72 /* SettingsCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 521E5FF526613CF40040ED72 /* SettingsCoordinator.swift */; };
+		521E600126616C440040ED72 /* Colors+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 521E600026616C440040ED72 /* Colors+Ext.swift */; };
+		521E600526616D0F0040ED72 /* UIFont+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 521E600426616D0F0040ED72 /* UIFont+Ext.swift */; };
+		521E600826616D570040ED72 /* UIDevice+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 521E600726616D570040ED72 /* UIDevice+Ext.swift */; };
+		521E600F26616DF10040ED72 /* Lato-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 521E600E26616DB80040ED72 /* Lato-Bold.ttf */; };
+		521E601126616DF30040ED72 /* Lato-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 521E600C26616DB80040ED72 /* Lato-Light.ttf */; };
+		521E601226616DF50040ED72 /* Lato-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 521E600D26616DB80040ED72 /* Lato-Regular.ttf */; };
+		521E60172662D9EC0040ED72 /* ActivitySectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 521E60162662D9EC0040ED72 /* ActivitySectionView.swift */; };
+		52E75AF72663E24800F4FC83 /* ActivityDescriptorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52E75AF62663E24800F4FC83 /* ActivityDescriptorView.swift */; };
+		52E75B022663EC3900F4FC83 /* ActivityDescriptor.xib in Resources */ = {isa = PBXBuildFile; fileRef = 52E75B012663EC3900F4FC83 /* ActivityDescriptor.xib */; };
+		52E75B072663EE1400F4FC83 /* UIView+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52E75B062663EE1400F4FC83 /* UIView+Ext.swift */; };
+		610074F1BBE9C65D667F437C /* Pods_FitnessApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 93AB5EC30559B572B08BED05 /* Pods_FitnessApp.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		134D6FAABADC3116B2E035EE /* Pods-FitnessApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FitnessApp.debug.xcconfig"; path = "Target Support Files/Pods-FitnessApp/Pods-FitnessApp.debug.xcconfig"; sourceTree = "<group>"; };
 		521E5FA92661118A0040ED72 /* FitnessApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FitnessApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		521E5FAC2661118A0040ED72 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		521E5FAE2661118A0040ED72 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		521E5FB02661118A0040ED72 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		521E5FB32661118A0040ED72 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		521E5FB52661118E0040ED72 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		521E5FB82661118E0040ED72 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -36,6 +55,27 @@
 		521E5FCF266115C40040ED72 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		521E5FD2266115E60040ED72 /* PlanViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanViewController.swift; sourceTree = "<group>"; };
 		521E5FD5266115F20040ED72 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		521E5FD826613A660040ED72 /* ActivityCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityCoordinator.swift; sourceTree = "<group>"; };
+		521E5FDD26613ACC0040ED72 /* UIViewController+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Ext.swift"; sourceTree = "<group>"; };
+		521E5FE226613C060040ED72 /* ActivityViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityViewModel.swift; sourceTree = "<group>"; };
+		521E5FE626613C2A0040ED72 /* PlanViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanViewModel.swift; sourceTree = "<group>"; };
+		521E5FE926613C3C0040ED72 /* ProfileViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewModel.swift; sourceTree = "<group>"; };
+		521E5FEC26613C560040ED72 /* SettingsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewModel.swift; sourceTree = "<group>"; };
+		521E5FEF26613CC90040ED72 /* PlanCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanCoordinator.swift; sourceTree = "<group>"; };
+		521E5FF226613CE00040ED72 /* ProfileCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileCoordinator.swift; sourceTree = "<group>"; };
+		521E5FF526613CF40040ED72 /* SettingsCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsCoordinator.swift; sourceTree = "<group>"; };
+		521E600026616C440040ED72 /* Colors+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Colors+Ext.swift"; sourceTree = "<group>"; };
+		521E600426616D0F0040ED72 /* UIFont+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIFont+Ext.swift"; sourceTree = "<group>"; };
+		521E600726616D570040ED72 /* UIDevice+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIDevice+Ext.swift"; sourceTree = "<group>"; };
+		521E600C26616DB80040ED72 /* Lato-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-Light.ttf"; sourceTree = "<group>"; };
+		521E600D26616DB80040ED72 /* Lato-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-Regular.ttf"; sourceTree = "<group>"; };
+		521E600E26616DB80040ED72 /* Lato-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-Bold.ttf"; sourceTree = "<group>"; };
+		521E60162662D9EC0040ED72 /* ActivitySectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivitySectionView.swift; sourceTree = "<group>"; };
+		52E75AF62663E24800F4FC83 /* ActivityDescriptorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityDescriptorView.swift; sourceTree = "<group>"; };
+		52E75B012663EC3900F4FC83 /* ActivityDescriptor.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ActivityDescriptor.xib; sourceTree = "<group>"; };
+		52E75B062663EE1400F4FC83 /* UIView+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Ext.swift"; sourceTree = "<group>"; };
+		62471F93383C00EBB5AE623B /* Pods-FitnessApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FitnessApp.release.xcconfig"; path = "Target Support Files/Pods-FitnessApp/Pods-FitnessApp.release.xcconfig"; sourceTree = "<group>"; };
+		93AB5EC30559B572B08BED05 /* Pods_FitnessApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FitnessApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,17 +83,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				610074F1BBE9C65D667F437C /* Pods_FitnessApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		28C9B5A85F887F05012AF64A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				93AB5EC30559B572B08BED05 /* Pods_FitnessApp.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		521E5FA02661118A0040ED72 = {
 			isa = PBXGroup;
 			children = (
 				521E5FAB2661118A0040ED72 /* FitnessApp */,
 				521E5FAA2661118A0040ED72 /* Products */,
+				9CFBEEF7C6E4D2784ED2E4AA /* Pods */,
+				28C9B5A85F887F05012AF64A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -70,14 +121,15 @@
 			children = (
 				521E5FAC2661118A0040ED72 /* AppDelegate.swift */,
 				521E5FAE2661118A0040ED72 /* SceneDelegate.swift */,
-				521E5FB02661118A0040ED72 /* ViewController.swift */,
+				52E75B0B2665593A00F4FC83 /* Protocols */,
+				521E5FDC26613ABD0040ED72 /* Extensions */,
 				521E5FC3266111F70040ED72 /* Views */,
 				521E5FC2266111EC0040ED72 /* ViewModels */,
 				521E5FC1266111E50040ED72 /* Controllers */,
 				521E5FC4266111FC0040ED72 /* Coordinators */,
-				521E5FB22661118A0040ED72 /* Main.storyboard */,
+				521E600B26616D9F0040ED72 /* Storyboards */,
+				521E600A26616D960040ED72 /* Fonts */,
 				521E5FB52661118E0040ED72 /* Assets.xcassets */,
-				521E5FB72661118E0040ED72 /* LaunchScreen.storyboard */,
 				521E5FBA2661118E0040ED72 /* Info.plist */,
 			);
 			path = FitnessApp;
@@ -98,6 +150,10 @@
 		521E5FC2266111EC0040ED72 /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
+				521E5FE226613C060040ED72 /* ActivityViewModel.swift */,
+				521E5FE626613C2A0040ED72 /* PlanViewModel.swift */,
+				521E5FE926613C3C0040ED72 /* ProfileViewModel.swift */,
+				521E5FEC26613C560040ED72 /* SettingsViewModel.swift */,
 			);
 			name = ViewModels;
 			sourceTree = "<group>";
@@ -105,6 +161,7 @@
 		521E5FC3266111F70040ED72 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				52E75B0C2665596C00F4FC83 /* Activity */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -113,8 +170,94 @@
 			isa = PBXGroup;
 			children = (
 				521E5FC9266112410040ED72 /* AppCoordinator.swift */,
+				521E5FD826613A660040ED72 /* ActivityCoordinator.swift */,
+				521E5FEF26613CC90040ED72 /* PlanCoordinator.swift */,
+				521E5FF226613CE00040ED72 /* ProfileCoordinator.swift */,
+				521E5FF526613CF40040ED72 /* SettingsCoordinator.swift */,
 			);
 			name = Coordinators;
+			sourceTree = "<group>";
+		};
+		521E5FDC26613ABD0040ED72 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				521E5FE126613AD00040ED72 /* UI */,
+				521E5FFF26616C3C0040ED72 /* Colors */,
+			);
+			name = Extensions;
+			sourceTree = "<group>";
+		};
+		521E5FE126613AD00040ED72 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				521E5FDD26613ACC0040ED72 /* UIViewController+Ext.swift */,
+				52E75B062663EE1400F4FC83 /* UIView+Ext.swift */,
+				521E600426616D0F0040ED72 /* UIFont+Ext.swift */,
+				521E600726616D570040ED72 /* UIDevice+Ext.swift */,
+			);
+			name = UI;
+			sourceTree = "<group>";
+		};
+		521E5FFF26616C3C0040ED72 /* Colors */ = {
+			isa = PBXGroup;
+			children = (
+				521E600026616C440040ED72 /* Colors+Ext.swift */,
+			);
+			name = Colors;
+			sourceTree = "<group>";
+		};
+		521E600A26616D960040ED72 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				521E600E26616DB80040ED72 /* Lato-Bold.ttf */,
+				521E600C26616DB80040ED72 /* Lato-Light.ttf */,
+				521E600D26616DB80040ED72 /* Lato-Regular.ttf */,
+			);
+			name = Fonts;
+			sourceTree = "<group>";
+		};
+		521E600B26616D9F0040ED72 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				521E5FB22661118A0040ED72 /* Main.storyboard */,
+				521E5FB72661118E0040ED72 /* LaunchScreen.storyboard */,
+				52E75B042663ED6500F4FC83 /* Activity */,
+			);
+			name = Storyboards;
+			sourceTree = "<group>";
+		};
+		52E75B042663ED6500F4FC83 /* Activity */ = {
+			isa = PBXGroup;
+			children = (
+				52E75B012663EC3900F4FC83 /* ActivityDescriptor.xib */,
+			);
+			name = Activity;
+			sourceTree = "<group>";
+		};
+		52E75B0B2665593A00F4FC83 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Protocols;
+			sourceTree = "<group>";
+		};
+		52E75B0C2665596C00F4FC83 /* Activity */ = {
+			isa = PBXGroup;
+			children = (
+				52E75AF62663E24800F4FC83 /* ActivityDescriptorView.swift */,
+				521E60162662D9EC0040ED72 /* ActivitySectionView.swift */,
+			);
+			name = Activity;
+			sourceTree = "<group>";
+		};
+		9CFBEEF7C6E4D2784ED2E4AA /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				134D6FAABADC3116B2E035EE /* Pods-FitnessApp.debug.xcconfig */,
+				62471F93383C00EBB5AE623B /* Pods-FitnessApp.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -124,6 +267,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 521E5FBD2661118E0040ED72 /* Build configuration list for PBXNativeTarget "FitnessApp" */;
 			buildPhases = (
+				8691E74BEF36B930B5CC8E3F /* [CP] Check Pods Manifest.lock */,
 				521E5FA52661118A0040ED72 /* Sources */,
 				521E5FA62661118A0040ED72 /* Frameworks */,
 				521E5FA72661118A0040ED72 /* Resources */,
@@ -174,28 +318,71 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				521E601126616DF30040ED72 /* Lato-Light.ttf in Resources */,
+				521E601226616DF50040ED72 /* Lato-Regular.ttf in Resources */,
 				521E5FB92661118E0040ED72 /* LaunchScreen.storyboard in Resources */,
+				52E75B022663EC3900F4FC83 /* ActivityDescriptor.xib in Resources */,
 				521E5FB62661118E0040ED72 /* Assets.xcassets in Resources */,
 				521E5FB42661118A0040ED72 /* Main.storyboard in Resources */,
+				521E600F26616DF10040ED72 /* Lato-Bold.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		8691E74BEF36B930B5CC8E3F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-FitnessApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		521E5FA52661118A0040ED72 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				521E5FB12661118A0040ED72 /* ViewController.swift in Sources */,
 				521E5FCD266115860040ED72 /* ActivityViewController.swift in Sources */,
 				521E5FD0266115C40040ED72 /* SettingsViewController.swift in Sources */,
+				521E5FDE26613ACC0040ED72 /* UIViewController+Ext.swift in Sources */,
+				521E5FF326613CE10040ED72 /* ProfileCoordinator.swift in Sources */,
 				521E5FAD2661118A0040ED72 /* AppDelegate.swift in Sources */,
+				521E600126616C440040ED72 /* Colors+Ext.swift in Sources */,
+				521E5FED26613C560040ED72 /* SettingsViewModel.swift in Sources */,
+				521E600826616D570040ED72 /* UIDevice+Ext.swift in Sources */,
+				52E75B072663EE1400F4FC83 /* UIView+Ext.swift in Sources */,
 				521E5FCA266112410040ED72 /* AppCoordinator.swift in Sources */,
+				521E5FEA26613C3C0040ED72 /* ProfileViewModel.swift in Sources */,
+				521E600526616D0F0040ED72 /* UIFont+Ext.swift in Sources */,
+				521E5FE726613C2A0040ED72 /* PlanViewModel.swift in Sources */,
 				521E5FD3266115E60040ED72 /* PlanViewController.swift in Sources */,
 				521E5FD6266115F20040ED72 /* ProfileViewController.swift in Sources */,
+				521E60172662D9EC0040ED72 /* ActivitySectionView.swift in Sources */,
 				521E5FC6266112250040ED72 /* MainTabBarController.swift in Sources */,
+				521E5FF626613CF40040ED72 /* SettingsCoordinator.swift in Sources */,
 				521E5FAF2661118A0040ED72 /* SceneDelegate.swift in Sources */,
+				521E5FD926613A660040ED72 /* ActivityCoordinator.swift in Sources */,
+				52E75AF72663E24800F4FC83 /* ActivityDescriptorView.swift in Sources */,
+				521E5FE326613C060040ED72 /* ActivityViewModel.swift in Sources */,
+				521E5FF026613CC90040ED72 /* PlanCoordinator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -339,6 +526,7 @@
 		};
 		521E5FBE2661118E0040ED72 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 134D6FAABADC3116B2E035EE /* Pods-FitnessApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -358,6 +546,7 @@
 		};
 		521E5FBF2661118E0040ED72 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 62471F93383C00EBB5AE623B /* Pods-FitnessApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;

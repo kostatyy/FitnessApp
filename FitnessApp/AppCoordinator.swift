@@ -7,22 +7,26 @@
 
 import UIKit
 
+/* Coordinator Protocol */
 protocol Coordinator {
-    var childCoordinators: [Coordinator] { get set }
+    var childCoordinators: [Coordinator] { get }
     var navigationController: UINavigationController { get }
     func start()
 }
 
-final class MainCoordinator: Coordinator {
-    
-    var childCoordinators: [Coordinator] = []
-    var navigationController: UINavigationController
-    
-    init(navigationController: UINavigationController) {
-        self.navigationController = navigationController
-    }
-    
-    func start() {
-        
-    }
-}
+//final class MainCoordinator: NSObject, Coordinator, UITabBarControllerDelegate {
+//    
+//    var childCoordinators: [Coordinator] = []
+//    var navigationController: UINavigationController
+//    
+//    init(navigationController: UINavigationController) {
+//        self.navigationController = navigationController
+//    }
+//    
+//    func start() {
+//        let viewController: MainTabBarController = .instantiate()
+//        viewController.modalPresentationStyle = .fullScreen
+//        navigationController.present(viewController, animated: true, completion: nil)
+//    }
+//    
+//}

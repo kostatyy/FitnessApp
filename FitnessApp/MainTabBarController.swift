@@ -8,13 +8,27 @@
 import UIKit
 
 class MainTabBarController: UITabBarController {
-
-    let main = MainCoordinator(navigationController: UINavigationController())
     
+    let activityCoordinator = ActivityCoordinator(navigationController: UINavigationController())
+    let planCoordinator     = PlanCoordinator(navigationController: UINavigationController())
+    let profileCoordinator  = ProfileCoordinator(navigationController: UINavigationController())
+    let settingsCoordinator = SettingsCoordinator(navigationController: UINavigationController())
+
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        main.start()
-        viewControllers = [main.navigationController]
+        activityCoordinator.start()
+        planCoordinator.start()
+        profileCoordinator.start()
+        settingsCoordinator.start()
+        
+        viewControllers =
+            [
+                activityCoordinator.navigationController,
+                planCoordinator.navigationController,
+                UIViewController(),
+                profileCoordinator.navigationController,
+                settingsCoordinator.navigationController
+            ]
     }
 }
